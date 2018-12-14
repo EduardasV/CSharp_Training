@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab_17_GUI_Database"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="auto" Width="auto">
+    <Grid Margin="0,0,-0.4,-0.4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Button01" Background="Aqua" Grid.Row="0" Grid.Column="0" Click="Button01_Click" />
+        <ListBox x:Name="ListBox01" Background="Beige" Grid.Row="2" Grid.Column="1" />
     </Grid>
 </Window>

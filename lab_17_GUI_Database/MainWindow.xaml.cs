@@ -20,9 +20,29 @@ namespace lab_17_GUI_Database
     /// </summary>
     public partial class MainWindow : Window
     {
+        // first pull in Entity
+        // then pull in DB : DECLARE DB HERE (STATIC)
+        static NorthwindEntities DBContext = new NorthwindEntities();
+
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button01_Click(object sender, RoutedEventArgs e)
+        {
+            // FOREACH (CUSTOEMRS)
+            //POPULATE LIST BOX
+
+            //LINQ QUERY
+            //POPULATE LIST BOX
+
+            // SELECT ONE PERSON FROM FINLAND
+            // CREATE AN "UPDATE" BUTTON ==> CLICK ==> PUSH FROM TEXTBOX HIS NEW NAME
+            //var customers = LINQ QUERY
+            /// DB BINDING
+            //ListBox01.ItemsSource = customers.ContactName;
         }
     }
 }
