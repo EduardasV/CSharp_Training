@@ -77,5 +77,40 @@ namespace lab_14_interfaces
  *                          child class has (optional) override keyword
  *                          
  *                          
- *          
+ *      Interfaces
+ *          force behavior
+ *              icomparable : forces comparison
+ *                  strings ==> sort
+ *                  must have CompareTo() method which permits 2 inputs and output 1, 0, -1
+ *                          if bigger/same/samller (first compared to second)
+ *                          
+ *          Fully abstract (no code)
+ *              all properties/methods : fully public (wihtout being stated)
+ *              
+ *          you can implement many interfaces
+ *              
+ *      abstract class
+ *          applied as a parent
+ *          combination 
+ *                          fields int x;
+ *                          properties int y {get;set;}
+ *                          methods DoThis(){}
+ *          either 
+ *                          abstgract e.g. methods with no body
+ *                          real e.g. methods with body
+ *                          
+ *      inherit from this class
+ *              real : can ignore (inherit)
+ *              abstract : empty : must code them out
+ *              
+ *      code read:
+ *              abstract void DoThis(); //parent
+ *              override void DoThis(){} //child
+ *              
+ *      Polymorphism
+ *              parent - virtual keyword                    --- publit virtual void DoThis(){}
+ *              child - override keyword on method          --- public override/new void DoThis(){}
+ *              
+ *      
+ *      
  */
