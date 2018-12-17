@@ -10,6 +10,8 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -17,7 +19,16 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Button x:Name="Button01" Background="Aqua" Grid.Row="0" Grid.Column="0" Click="Button01_Click" />
-        <ListBox x:Name="ListBox01" Background="Beige" Grid.Row="2" Grid.Column="1" />
+        <Button Content="New" x:Name="Button01" Background="LightGray" Grid.Row="0" Grid.Column="0" Click="Button01_Click" FontSize="24" IsEnabled="False" />
+        <Button Content="Update" x:Name="Button02" Background="LightGray" Grid.Row="0" Grid.Column="1" Click="Button01_Click" FontSize="24" IsEnabled="False" />
+        <Button Content="Delete" x:Name="Button03" Background="LightGray" Grid.Row="0" Grid.Column="2" Click="Button01_Click" FontSize="24" IsEnabled="False" />
+        <Button Content="Search" x:Name="Button04" Background="LightGray" Grid.Row="3" Grid.Column="2" Click="Button01_Click" FontSize="24" />
+        <ListBox DisplayMemberPath="ContactName Country" x:Name="ListBox01" Background="Beige" Grid.Row="4" Grid.Column="1" SelectionChanged="ListBox01_SelectionChanged" />
+        <TextBox x:Name="SearchBox" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" FontSize="20" MaxLength="20" Height="38" VerticalAlignment="Bottom" />
+        <Label Content="Country" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Right" Width="79"/>
+        <TextBox x:Name="NameBox" TextChanged="txtChange" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" FontSize="20" MaxLength="20" Height="38" VerticalAlignment="Bottom" />
+        <Label Content="Name" Grid.RowSpan="2" FontSize="20" HorizontalAlignment="Right" Width="79" Grid.Column="0" Grid.Row="1"/>
+        <TextBox x:Name="CountryBox" TextChanged="txtChange" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" FontSize="20" MaxLength="20" Height="38" VerticalAlignment="Bottom" />
+        <Label Content="Country" Grid.Column="0" Grid.Row="2" FontSize="20" HorizontalAlignment="Right" Width="79"/>
     </Grid>
 </Window>

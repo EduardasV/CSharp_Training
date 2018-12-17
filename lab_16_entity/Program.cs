@@ -28,7 +28,7 @@ namespace lab_16_entity
 
             var customers =
                     from c in DBContext.Customers
-                    where c.City=="berlin"
+                    where c.City=="berlin" 
                     select c;
 
 
@@ -72,13 +72,4 @@ namespace lab_16_entity
  *      singleCustomer.ContactName += "fred";
  *      DBContext.SaveChanges();
  *      
- *  Project Pseudocode
- *      grid 3x3
- *          top 2 rows : Button : refresh from database
- *                      text boxes : for input e.g. city name
- *          bottom 3 columns
- *                      1) TextBlock
- *                      2) ListBox with STRING e.g. customer.ContactName lives in ...City
- *                      3) ListBox bound to a field 
- *                                  ListBox.ItemSource = <<linq output variable>>
  */
